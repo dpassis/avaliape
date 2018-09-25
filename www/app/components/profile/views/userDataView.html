@@ -1,0 +1,68 @@
+<form name="userDataForm" style="margin-left: 400px;" novalidate>
+    <header>
+        <h3 data-i18n="pfl.userDataForm_formTitle"></h3>
+    </header>
+    <table style="width:50%">
+        <tr>
+            <td>
+                <input style="background: white" data-i18n-attr="{placeholder: 'pfl.userDataForm_firstName'}" ng-model="userData.firstName" id="firstName"
+                    type="text" required>
+            </td>
+            <td>
+                <input style="background: white" data-i18n-attr="{placeholder: 'pfl.userDataForm_lastName'}" ng-model="userData.lastName" id="lastName"
+                    type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select style="display: block;" ng-model="userData.gender" id="gender">
+                    <option value="" data-i18n="pfl.userDataForm_gender"></option>
+                    <option data-i18n-attr="{value: 'pfl.userDataForm_male'}" data-i18n="pfl.userDataForm_male"></option>
+                    <option data-i18n-attr="{value: 'pfl.userDataForm_female'}" data-i18n="pfl.userDataForm_female"></option>
+                </select>
+            </td>
+            <td>
+                <input style="background: white" data-i18n-attr="{placeholder: 'pfl.userDataForm_birthday'}" ng-model="userData.birthday" id="birthday"
+                    type="text">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center" colspan="2">
+                <div ng-if="!loadingCountries" data-i18n="pfl.userDataForm_loadingCountries"></div>
+                <select ng-show="loadingCountries" style="display: block;" ng-model="userData.country" ng-options="child as child.countryName for child in countries | orderBy:'countryName'"
+                    ng-change="updateStates(userData.country)" id="country">
+                    <option value="" data-i18n="pfl.userDataForm_country" selected></option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div ng-if="!loadingStates" data-i18n="pfl.userDataForm_loadingStates"></div>
+                <select ng-show="loadingStates" style="display: block;" ng-model="userData.state" ng-options="child as child.name for child in states | orderBy:'name'"
+                    ng-change="updateCities(userData.state)" id="state">
+                    <option value="" data-i18n="pfl.userDataForm_state"></option>
+                </select>
+            </td>
+            <td>
+                <div ng-if="!loadingCities" data-i18n="pfl.userDataForm_loadingCities"></div>
+                <select ng-show="loadingCities" style="display: block;" ng-model="userData.city" ng-options="child as child.name for child in cities | orderBy:'name'"
+                    id="city">
+                    <option value="" data-i18n="pfl.userDataForm_city"></option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td style="text-align: center" colspan="2">
+                <save-data-button data-i18n-attr="{nome: 'pfl.userDataForm_buttonText'}" acao="writeUserData()" ng-disabled="userDataForm_$invalid">
+                </save-data-button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p ng-if="succesWriteUserData" class="alert alert-danger" data-i18n='{{ error }}'></p>
+            </td>
+        </tr>
+    </table>
+</form>

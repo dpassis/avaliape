@@ -1,0 +1,27 @@
+{
+      "userDataForm_formTitle": "Cadastre seu dados para continuar",
+      "userDataForm_buttonText": "Salvar seus Dados",
+      "userDataForm_firstName": "Nome",
+      "userDataForm_lastName": "Sobrenome",
+      "userDataForm_gender": "Sexo",
+      "userDataForm_birthday": "Sua data de Nascimento",
+      "userDataForm_country": "Seu País",
+      "userDataForm_city": "Sua cidade",
+      "userDataForm_state": "Seu estado",
+      "userDataForm_male": "Masculino",
+      "userDataForm_female":"Feminino",
+      "userDataForm_loadingCountries" : "Carregando Países...",
+      "userDataForm_loadingStates" : "Carregando Estados...",
+      "userDataForm_loadingCities" : "Carregando Cidades...",
+      "userDataForm_successUserData": "Dados cadastrados com sucesso",
+      "userDataForm_messageSucces_title" : "Sucesso!",
+      "userDataForm_messageSuccess_message": "Cadastro realizado com Sucesso!",
+      "userDataForm_messageSuccess_clickToContinue": "Clique aqui para continuar...",
+
+      "loginDataForm_loginDataFormTitle": "Altere seus dados de Login",
+      "loginDataForm_newEmail": "Seu novo email",
+      "loginDataForm_oldPassword": "Sua Senha",
+      "loginDataForm_newPassword": "Nova Senha",
+      "loginDataForm_confNewPassword": "Confirmar Nova Senha",
+      "loginDataForm_changeEmailOrPassword": "Alterar"
+}

@@ -1,0 +1,44 @@
+{
+    "loginUserForm_formTitle": "Acessar sua Conta",
+    "loginUserForm_email": "correo electrónico",
+    "loginUserForm_password": "contraseña",
+    "loginUserForm_buttonText": "Iniciar Sesión",
+    "loginUserForm_forgotPassword": "¿Olvidaste tu contraseña?",
+    "loginUserForm_loginWith": "Entrar con:",
+    "loginUserForm_recoverPassword": "Recuperar contraseña",
+    "loginUserForm_createAccount": "Crear una Cuenta",
+
+    "loginUserForm_errorMessage_invalidEmail": "Email inválido!",
+    "loginUserForm_errorMessage_wrongPass": "Contraseña incorrecta!",
+    "loginUserForm_errorMessage_userDisable":"Usuario deshabilitado",
+    "loginUserForm_errorMessage_userNotFound":"Usuario no encontradoo",
+    "loginUserForm_errorMessage_oprNotAllowed": "Operación no permitida",
+    "loginUserForm_errorMessage_unknownError": "Ops algo salió mal, inténtelo de nuevo.",
+
+    "createUserForm_formTitle": "Crea tu cuenta",
+    "createUserForm_email": "correo electrónico",
+    "createUserForm_password": "contraseña",
+    "createUserForm_confPassword": "confirme la contraseña",
+    "createUserForm_buttonText" : "Criar uma conta",
+
+    "createUserForm_errorMessage_errPswd": "Las contraseñas no coinciden",
+    "createUserForm_errorMessage_invalidEmail":"Correo electrónico no válido!",
+    "createUserForm_errorMessage_emailInUse":"Correo electrónico ya está registrado",
+    "createUserForm_errorMessage_weakPass":"Contraseña muy débil!",
+    "createUserForm_errorMessage_diffPass":  "Contraseñas Diferentes",
+    "createUserForm_errorMessage_oprNotAllowed": "Operación no permitida",
+    "createUserForm_errorMessage_sendMailError": "Error en el envio del correo electrónico de confirmación, póngase en contacto con nosotros.",
+    "createUserForm_errorMessage_unknownError": "Ops algo salió mal, inténtelo de nuevo.",
+ 
+    "createUserForm_messageSuccess_title" : "¡Cuenta creada con éxito!",
+    "createUserForm_messageSuccess_message": "Un e-mail de confirmación ha sido enviado a la cuenta de correo electrónico registrada. Haga clic en el enlace enviado por correo electrónico para confirmar la creación de su cuenta.",
+    "createUserForm_messageSuccess_loginToContinue":"Haga clic en Iniciar sesión para continuar.",
+
+    "pswdResetForm_formTitle": "Recupere su contraseña",
+    "pswdResetForm_email": "correo electrónico",
+    "pswdResetForm_buttonText" : "Enviar",
+
+    "pswdResetForm_errorMessage_invalidEmail": "Correo electrónico no válido!",
+    "pswdResetForm_errorMessage_userNotFound": "Usuario no encontradoo",
+    "pswdResetForm_errorMessage_unknownError": "Ops algo salió mal, inténtelo de nuevo."
+}

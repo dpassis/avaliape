@@ -1,0 +1,38 @@
+{
+        "navbar_homeButton" : "Home",
+        "navbar_newsButton" : "Noticias",
+        "navbar_createAccountButton" : "Crear una cuenta",
+        "navbar_loginButton": "Iniciar sesión",
+        "navbar_profileButton": "Perfil",
+        "navbar_logoutButton": "Desconectar",
+
+        "footer_avaliape_about" : "Acerca de",
+        "footer_avaliape_login": "Iniciar sesión",
+        "footer_avaliape_createAccount": "Crear una cuenta",
+        "footer_avaliape_termsOfUse": "Terminos de uso",
+        "footer_avaliape_privacyPolicy": "Política de privacidad",
+        "footer_avaliape_contact": "Hable con nosotros",
+
+        "footer_help_helpTitle": "Ayuda",
+        "footer_help_security" : "¿Avaliapê Es seguro?",
+        "footer_help_frequentlyQuestions" : "Preguntas frecuentes",
+        "footer_help_forBusinesses": "Para Empresas",
+
+        "footer_find_findTitle":  "Encontrar",
+        "footer_find_byBuilding" : "por Edificio",
+        "footer_find_byCondo" : "por Condominio",
+        "footer_find_byAdress": "por Dirección",
+
+        "footer_language_portuguese" : "Portugués",
+        "footer_language_english": "Inglés",
+        "footer_language_spanish": "Español",
+
+        "menu_profile": "Perfil",
+        "menu_loginData": "Datos de inicio de sesión",
+        "menu_personalData" : "Datos Personales",
+        "menu_timeline" : "Timeline",
+        "menu_signOut": "Desconectar",
+
+        "home_mainSearchPlaceholder": "Buscar por el edificio, condominio o dirección",
+        "home_mainSearchLabel": "Más de 1.000 puestos evaluados"
+}

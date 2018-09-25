@@ -1,0 +1,45 @@
+{
+    "loginUserForm_formTitle": "Acessar sua Conta",
+    "loginUserForm_email": "e-mail",
+    "loginUserForm_password": "password",
+    "loginUserForm_buttonText": "Entrar",
+    "loginUserForm_forgotPassword": "Forgot your password?",
+    "loginUserForm_loginWith": "Login with:",
+    "loginUserForm_recoverPassword": "Recover Password",
+    "loginUserForm_createAccount": "Create an Account",
+
+    "loginUserForm_errorMessage_invalidEmail":"Invalid Email!",
+    "loginUserForm_errorMessage_wrongPass": "Wrong Password!",
+    "loginUserForm_errorMessage_userDisable":"User disabled",
+    "loginUserForm_errorMessage_userNotFound":"User not found",
+    "loginUserForm_errorMessage_oprNotAllowed": "Operation no allowed",
+    "loginUserForm_errorMessage_unknownError": "Oops something went wrong, try again.",
+    "loginUserForm_errorMessage_confEmail": "Unconfirmed email, click the link sent to your email to activate the account.",
+
+    "createUserForm_formTitle": "Create your account",
+    "createUserForm_email": "e-mail",
+    "createUserForm_password": "password",
+    "createUserForm_confPassword": "confirm the password",
+    "createUserForm_buttonText" : "Create an Account",
+
+    "createUserForm_errorMessage_errPswd": "Passwords don't match",
+    "createUserForm_errorMessage_invalidEmail":"Invalid Email!",
+    "createUserForm_errorMessage_emailInUse":"Email already in use",
+    "createUserForm_errorMessage_weakPass":"Weak Password!",
+    "createUserForm_errorMessage_diffPass":  "Different passwords",
+    "createUserForm_errorMessage_oprNotAllowed": "Operation no allowed",
+    "createUserForm_errorMessage_sendMailError": "Error sending confirmation email, please contact us.",
+    "createUserForm_errorMessage_unknownError": "Oops something went wrong, try again.",
+  
+    "createUserForm_messageSuccess_title" : "Account created successfully!",
+    "createUserForm_messageSuccess_message": "A confirmation email has been sent to the registered email account.Click the email link to confirm your account creation.",
+    "createUserForm_messageSuccess_loginToContinue":"Click Login to continue.",
+
+    "pswdResetForm_formTitle": "Recover your password",
+    "pswdResetForm_email": "e-mail",
+    "pswdResetForm_buttonText" : "Send",
+
+    "pswdResetForm_errorMessage_invalidEmail": "Invalid Email!",
+    "pswdResetForm_errorMessage_userNotFound": "User not found",
+    "pswdResetForm_errorMessage_unknownError": "Oops something went wrong, try again."
+}

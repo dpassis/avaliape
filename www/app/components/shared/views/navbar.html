@@ -1,0 +1,37 @@
+      <nav class="navbar navbar-default main-navigation" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- End Toggle Nav Link For Mobiles -->
+            <a class="navbar-brand logo" href="/"><img src="img/logofk.png" alt="Logo"></a>
+          </div>
+          <!-- brand and toggle menu for mobile End -->
+          <!-- Navbar Start -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="auth/create" ng-if="!user.loggedIn">
+                  <span class="glyphicon glyphicon-user"></span><span data-i18n="shared.navbar_createAccountButton"></span>
+                </a>
+              </li>
+              <li>
+                <a href="auth" ng-if="!user.loggedIn">
+                  <span class="glyphicon glyphicon-log-in"></span><span data-i18n="shared.navbar_loginButton"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><li ng-if="user.loggedIn"><span>Olá, {{firebaseUser.email}}</span></li></a>
+              </li>
+              <li>
+                <a href="#" data-wow-iteration="infinite" data-wow-duration="500ms" data-toggle="offcanvas" data-target=".navmenu" ng-if="user.loggedIn"><i class="glyphicon glyphicon-user"></i> <span data-i18n="shared.navbar_profileButton"> </span></a>
+              </li>
+              <li>
+                <a href="auth" ng-if="user.loggedIn" ng-click="signOut()"><span class="glyphicon glyphicon-log-in"></span> <span data-i18n="shared.navbar_logoutButton"> </span></a>
+              </li>
+              <li class="postadd">
+                <a class="btn btn-danger btn-post" href="post-ads.html"><span class="fa fa-plus-circle"></span> Avaliar Apê</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Navbar End -->
+        </div>
+      </nav>

@@ -1,0 +1,38 @@
+{
+        "navbar_homeButton" : "Home",
+        "navbar_newsButton" : "Notícias",
+        "navbar_createAccountButton" : "Criar uma Conta",
+        "navbar_loginButton": "Login",
+        "navbar_profileButton": "Perfil",
+        "navbar_logoutButton": "Sair",
+
+        "footer_avaliape_about" : "Sobre",
+        "footer_avaliape_login": "Login",
+        "footer_avaliape_createAccount": "Criar uma conta",
+        "footer_avaliape_termsOfUse": "Termos de uso",
+        "footer_avaliape_privacyPolicy": "Política de privacidade",
+        "footer_avaliape_contact": "Fale Conosco",
+
+        "footer_help_helpTitle": "Ajuda",
+        "footer_help_security" : "Avaliapê é seguro?",
+        "footer_help_frequentlyQuestions" : "Perguntas frequentes",
+        "footer_help_forBusinesses": "Para Empresas",
+
+        "footer_find_findTitle":  "Encontrar",
+        "footer_find_byBuilding" : "por Edificio",
+        "footer_find_byCondo" : "por Condominio",
+        "footer_find_byAdress": "por Endereço",
+
+        "footer_language_portuguese" : "Português",
+        "footer_language_english": "Inglês",
+        "footer_language_spanish": "Espanhol",
+
+        "menu_profile": "Perfil",
+        "menu_loginData": "Dados de Login",
+        "menu_personalData" : "Dados Pessoais",
+        "menu_timeline" : "Timeline",
+        "menu_signOut": "Sair",
+
+        "home_mainSearchPlaceholder": "Buscar pelo prédio, condomínio ou endereço",
+        "home_mainSearchLabel": "Mais de 1.000 lugares avaliados"
+}

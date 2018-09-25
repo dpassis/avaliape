@@ -1,0 +1,56 @@
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url(libs/avaliape_theme/assets/img/banner3.jpg);">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="page-title" data-i18n="auth.loginUserForm_formTitle"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End --> 
+
+    <!-- Content section Start --> 
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-4 col-md-4 col-md-offset-4">
+            <div class="page-login-form box">
+              <h3>
+                Login
+              </h3>
+              <form role="form" class="login-form" name="authForm" novalidate>
+                <div class="form-group">
+                  <div class="input-icon">
+                    <i class="icon fa fa-user"></i>
+                    <input data-i18n-attr="{placeholder: 'auth.loginUserForm_email'}" ng-model="email" id="email" type="email" class="form-control" required>
+                  </div>
+                </div> 
+                <div class="form-group">
+                  <div class="input-icon">
+                    <i class="icon fa fa-unlock-alt"></i>
+                    <input data-i18n-attr="{placeholder: 'auth.loginUserForm_password'}" ng-model="password" id="password" type="password" class="form-control" required>
+                  </div>
+                </div>                  
+               <save-data-button data-i18n-attr="{nome: 'auth.loginUserForm_buttonText'}" acao="signIn()" ng-disabled="authForm.$invalid">
+			</save-data-button>
+              </form>
+              <ul class="form-links">
+                <li class="pull-left">
+                	<a data-i18n="auth.loginUserForm_createAccount" id="lnkCreateAccount" href="auth/create"></a>
+                </li>
+                <li class="pull-right">
+                	<a data-i18n="auth.loginUserForm_forgotPassword" id="lnkForgotPassword" href="auth/forgotPass"></a>
+                </li>
+              </ul>
+              <p class="box-error-content" ng-if="error">
+                <i class="fa fa-times"></i> <span data-i18n='{{ error }}'> </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content section End -->

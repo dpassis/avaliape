@@ -1,0 +1,45 @@
+{
+    "loginUserForm_formTitle": "Acessar sua Conta",
+    "loginUserForm_email": "e-mail",
+    "loginUserForm_password": "senha",
+    "loginUserForm_buttonText": "Entrar",
+    "loginUserForm_forgotPassword": "Esqueceu sua senha?",
+    "loginUserForm_loginWith": "Entrar com:",
+    "loginUserForm_recoverPassword": "Recuperar Senha",
+    "loginUserForm_createAccount": "Criar uma conta",
+
+    "loginUserForm_errorMessage_invalidEmail": "Email inválido!",
+    "loginUserForm_errorMessage_wrongPass": "Senha incorreta!",
+    "loginUserForm_errorMessage_userDisable": "Usuário Desabilitado",
+    "loginUserForm_errorMessage_userNotFound": "Usuário não encontrado",
+    "loginUserForm_errorMessage_oprNotAllowed": "Operação não permitida",
+    "loginUserForm_errorMessage_unknownError": "Ops algo deu errado, tente novamente.",
+    "loginUserForm_errorMessage_confEmail": "E-mail não confirmado,clique no link enviado para seu email para ativar a conta.",
+
+    "createUserForm_formTitle": "Crie sua conta",
+    "createUserForm_email": "e-mail",
+    "createUserForm_password": "senha",
+    "createUserForm_confPassword": "confirme a senha",
+    "createUserForm_buttonText" : "Criar uma conta",
+
+    "createUserForm_errorMessage_errPswd": "Senhas não são iguais",
+    "createUserForm_errorMessage_invalidEmail": "Email inválido!",
+    "createUserForm_errorMessage_emailInUse": "Email já utilizado",
+    "createUserForm_errorMessage_weakPass": "Senha muito fraca!",
+    "createUserForm_errorMessage_diffPass": "Senhas Diferentes",
+    "createUserForm_errorMessage_oprNotAllowed": "Operação não permitida",
+    "createUserForm_errorMessage_sendMailError": "Erro ao enviar e-mail de confirmação, entre em contato pelo Fale Conosco.",
+    "createUserForm_errorMessage_unknownError": "Ops algo deu errado, tente novamente.",
+
+    "createUserForm_messageSuccess_title" : "Conta criada com sucesso!",
+    "createUserForm_messageSuccess_message": "Um e-mail de confirmação foi enviado para a conta de e-mail cadastrada.Clique no link enviado por email para confirmar a criação da sua conta.",
+    "createUserForm_messageSuccess_loginToContinue":"Clique em Login para continuar.",
+
+    "pswdResetForm_formTitle": "Recupere sua senha",
+    "pswdResetForm_email": "e-mail",
+    "pswdResetForm_buttonText" : "Send",
+
+    "pswdResetForm_errorMessage_invalidEmail": "Email inválido!",
+    "pswdResetForm_errorMessage_userNotFound": "Usuário não encontrado",
+    "pswdResetForm_errorMessage_unknownError": "Ops algo deu errado, tente novamente."
+}

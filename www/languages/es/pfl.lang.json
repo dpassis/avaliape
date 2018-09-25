@@ -1,0 +1,27 @@
+{
+    "userDataForm_formTitle": "Registre sus datos para continuar",
+    "userDataForm_buttonText": "Guardar sus datos",
+    "userDataForm_firstName": "Su nombre",
+    "userDataForm_lastName": "Su apellido",
+    "userDataForm_gender": "Su sexo",
+    "userDataForm_birthday": "Su fecha de nacimiento",
+    "userDataForm_country": "Su País",
+    "userDataForm_city": "Su ciudad",
+    "userDataForm_state": "Su estado",
+    "userDataForm_male": "Mujer",
+    "userDataForm_female":"Hombre",
+    "userDataForm_loadingCountries" : "Cargando Países...",
+    "userDataForm_loadingStates" : "Cargando Estados...",
+    "userDataForm_loadingCities" : "Cargando Ciudades...",
+    "userDataForm_successUserData": "Los datos registrados con éxito",
+    "userDataForm_messageSucces_title" : "Éxito!",
+    "userDataForm_messageSuccess_message": "¡Registro realizado con éxito!",
+    "userDataForm_messageSuccess_clickToContinue": "Haga clic aquí para continuar...",
+
+    "loginDataForm_loginDataFormTitle": "Cambie sus datos de inicio de sesión",
+    "loginDataForm_newEmail": "Su nuevo correo electrónico",
+    "loginDataForm_oldPassword": "Su Contraseña",
+    "loginDataForm_newPassword": "Nueva contraseña",
+    "loginDataForm_confNewPassword": "Confirmar nueva contraseña",
+    "loginDataForm_changeEmailOrPassword": "Cambiar"
+}

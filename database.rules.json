@@ -1,0 +1,11 @@
+{
+  "rules": {
+    ".read": "auth != null",
+   "users": {
+      "$uid": {
+        // write access only to your own data
+        ".write": "$uid === auth.uid",
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+      "userDataForm_formTitle": "Register your data to continue",
+      "userDataForm_buttonText": "Save your data",
+      "userDataForm_firstName": "Your First Name",
+      "userDataForm_lastName": "Your Last Name",
+      "userDataForm_gender": "Your Gender",
+      "userDataForm_birthday": "Your date of birth",
+      "userDataForm_country": "Your Country",
+      "userDataForm_city": "Your City",
+      "userDataForm_state": "Your State",
+      "userDataForm_male": "Male",
+      "userDataForm_female":"Female",
+      "userDataForm_loadingCountries" : "Loading Countries...",
+      "userDataForm_loadingStates" : "Loading States...",
+      "userDataForm_loadingCities" : "Loading Cities...",
+      "userDataForm_successUserData": "Data successfully registered",
+      "userDataForm_messageSucces_title" : "Success!",
+      "userDataForm_messageSuccess_message": "Successful registration!",
+      "userDataForm_messageSuccess_clickToContinue": "Click here to continue...",
+
+      "loginDataFormloginDataFormTitle": "Change your Login Information",
+      "loginDataFormnewEmail": "Your new email",
+      "loginDataFormoldPassword": "Your Password",
+      "loginDataFormnewPassword": "New Password",
+      "loginDataFormconfNewPassword": "Confirm new Password",
+      "loginDataFormchangeEmailOrPassword": "Change"
+}

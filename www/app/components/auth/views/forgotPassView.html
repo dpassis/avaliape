@@ -1,0 +1,46 @@
+	<!-- Page Header Start -->
+    <div class="page-header" style="background: url(libs/avaliape_theme/assets/img/banner3.jpg);">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="page-title" data-i18n="auth.pswdResetForm_formTitle"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End --> 
+
+	<!-- Content section Start --> 
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-4 col-md-4 col-md-offset-4">
+            <div class="page-login-form box">
+              <h3>
+                Esqueci a senha
+              </h3>
+              <form role="form" class="login-form" name="forgotForm" novalidate>
+                <div class="form-group">
+                  <div class="input-icon">
+                    <i class="icon fa fa-user"></i>
+                    <input class="form-control" data-i18n-attr="{placeholder: 'auth.pswdResetForm_email'}" ng-model="email" id="email" type="email" required>
+                  </div>
+                </div>     
+                <button class="btn btn-common log-btn" type="submit" data-i18n="auth.pswdResetForm_buttonText" ng-click="recoveryPassword()" ng-disabled="forgotForm.$invalid"></button>
+              </form>
+              <ul class="form-links">
+                <li class="pull-left">
+                	<a data-i18n="auth.loginUserForm_createAccount" id="lnkCreateAccount" href="auth/create"></a>
+                </li>
+              </ul>
+              <p class="box-error-content" ng-if="error">
+                 <i class="fa fa-times"></i> <span data-i18n='{{ error }}'> </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content section End -->

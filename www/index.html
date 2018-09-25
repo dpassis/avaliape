@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="AvaliApê">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/css/bootstrap.min.css" type="text/css">    
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/css/jasny-bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/css/jasny-bootstrap.min.css" type="text/css">
+        <!-- Material CSS -->
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/css/material-kit.css" type="text/css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/css/font-awesome.min.css" type="text/css">
+
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/fonts/line-icons/line-icons.css" type="text/css">
+        <!-- Main Styles -->
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/css/main.css" type="text/css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/extras/animate.css" type="text/css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/extras/owl.carousel.css" type="text/css">
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/extras/owl.theme.css" type="text/css">
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/extras/settings.css" type="text/css">
+        <!-- Responsive CSS Styles -->
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/css/responsive.css" type="text/css">
+        <!-- Bootstrap Select -->
+        <link rel="stylesheet" href="libs/avaliape_theme/assets/css/bootstrap-select.min.css">   
+        <title>AvaliApê - MORE THAN 1,000 PLACES RATINGS</title>
+    </head>
+    <body data-ng-controller="MainController" ng-cloak>
+        <div class="page">
+            <!--################### HEADER ###################-->
+            <header>
+                <div id="stuck_container" class="stuck_container">
+                    <div class="container">
+                        <nav-bar></nav-bar>
+                        <menu-bar ng-if="user.loggedIn"></menu-bar>
+                    </div>       
+                </div>        
+            </header>
+            <!--################### CONTENT ###################-->
+            <main>
+                <div ng-view></div>
+            </main>  
+
+            <!--################### FOOTER ###################-->
+            <footer id="apFooter">
+                <footer-bar></footer-bar>
+            </footer>
+        </div>
+    <!-- Main JS  -->
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/jquery-min.js"></script>  
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/material.min.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/material-kit.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/wow.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/jasny-bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/form-validator.min.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/contact-form-script.js"></script>    
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="libs/avaliape_theme/assets/js/bootstrap-select.min.js"></script>
+    <script data-main="app/app.require.js" src="app/libs/js/requirejs/2.3.3/require.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

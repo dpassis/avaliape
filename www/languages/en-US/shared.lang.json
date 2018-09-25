@@ -1,0 +1,38 @@
+{
+        "navbar_homeButton" : "Home",
+        "navbar_newsButton" : "News",
+        "navbar_createAccountButton" : "Create an Account",
+        "navbar_loginButton": "Login",
+        "navbar_profileButton": "Profile",
+        "navbar_logoutButton": "SignOut",
+
+        "footer_avaliape_about" : "About",
+        "footer_avaliape_login": "Login",
+        "footer_avaliape_createAccount": "Create an account",
+        "footer_avaliape_termsOfUse": "Terms of Use",
+        "footer_avaliape_privacyPolicy": "Privacy Policy",
+        "footer_avaliape_contact": "Contact us",
+
+        "footer_help_helpTitle": "Help",
+        "footer_help_security" : "Is AvaliApê safe?",
+        "footer_help_frequentlyQuestions" : "Frequently Asked Questions",
+        "footer_help_forBusinesses": "For Businesses",
+
+        "footer_find_findTitle":  "Find",
+        "footer_find_byBuilding" : "by Building",
+        "footer_find_byCondo" : "by Condo",
+        "footer_find_byAdress": "by Adress",
+
+        "footer_language_portuguese" : "Portuguese",
+        "footer_language_english": "English",
+        "footer_language_spanish": "Spanish",
+
+        "menu_profile": "Profile",
+        "menu_loginData": "Login Data",
+        "menu_personalData" : "Personal Data",
+        "menu_timeline" : "Timeline",
+        "menu_signOut": "SignOut",
+
+        "home_mainSearchPlaceholder": "Search for building, condominium or address",
+        "home_mainSearchLabel": "More than 1,000 places ratings"
+}
