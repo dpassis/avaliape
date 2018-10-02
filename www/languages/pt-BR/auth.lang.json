@@ -32,7 +32,7 @@
     "createUserForm_errorMessage_unknownError": "Ops algo deu errado, tente novamente.",
 
     "createUserForm_messageSuccess_title" : "Conta criada com sucesso!",
-    "createUserForm_messageSuccess_message": "Um e-mail de confirmação foi enviado para a conta de e-mail cadastrada.Clique no link enviado por email para confirmar a criação da sua conta.",
+    "createUserForm_messageSuccess_message": "Um e-mail de confirmação foi enviado para a conta de e-mail cadastrada. Clique no link enviado por email para confirmar a criação da sua conta.",
     "createUserForm_messageSuccess_loginToContinue":"Clique em Login para continuar.",
 
     "pswdResetForm_formTitle": "Recupere sua senha",
@@ -41,5 +41,8 @@
 
     "pswdResetForm_errorMessage_invalidEmail": "Email inválido!",
     "pswdResetForm_errorMessage_userNotFound": "Usuário não encontrado",
-    "pswdResetForm_errorMessage_unknownError": "Ops algo deu errado, tente novamente."
+    "pswdResetForm_errorMessage_unknownError": "Ops algo deu errado, tente novamente.",
+
+    "pswdResetForm_messageSuccess_title" : "E-mail enviado com Sucesso!",
+    "pswdResetForm_messageSuccess_message": "Um e-mail para recuperação de senha foi enviado para a conta de e-mail cadastrada."
 }

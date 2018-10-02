@@ -40,5 +40,8 @@
 
     "pswdResetForm_errorMessage_invalidEmail": "Correo electrónico no válido!",
     "pswdResetForm_errorMessage_userNotFound": "Usuario no encontradoo",
-    "pswdResetForm_errorMessage_unknownError": "Ops algo salió mal, inténtelo de nuevo."
+    "pswdResetForm_errorMessage_unknownError": "Ops algo salió mal, inténtelo de nuevo.",
+
+    "pswdResetForm_messageSuccess_title" : "¡Email enviado con éxito!",
+    "pswdResetForm_messageSuccess_message": "Un correo electrónico para la recuperación de contraseña se ha enviado a la cuenta de correo electrónico registrada."
 }

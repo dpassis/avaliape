@@ -32,7 +32,7 @@
     "createUserForm_errorMessage_unknownError": "Oops something went wrong, try again.",
   
     "createUserForm_messageSuccess_title" : "Account created successfully!",
-    "createUserForm_messageSuccess_message": "A confirmation email has been sent to the registered email account.Click the email link to confirm your account creation.",
+    "createUserForm_messageSuccess_message": "A confirmation email has been sent to the registered email account. Click the email link to confirm your account creation.",
     "createUserForm_messageSuccess_loginToContinue":"Click Login to continue.",
 
     "pswdResetForm_formTitle": "Recover your password",
@@ -41,5 +41,8 @@
 
     "pswdResetForm_errorMessage_invalidEmail": "Invalid Email!",
     "pswdResetForm_errorMessage_userNotFound": "User not found",
-    "pswdResetForm_errorMessage_unknownError": "Oops something went wrong, try again."
+    "pswdResetForm_errorMessage_unknownError": "Oops something went wrong, try again.",
+
+    "pswdResetForm_messageSuccess_title" : "Email successfully sent!",
+    "pswdResetForm_messageSuccess_message": "An email for password recovery has been sent to the registered email account."
 }
