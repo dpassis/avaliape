@@ -69,7 +69,7 @@ var app = angular.module('avaliape.authController', [
 
 
 							firebaseUser.sendEmailVerification().then(function () {
-								$scope.$location.path("/auth/success");
+								$scope.$location.path("/auth/successCreateUser");
 								if (!$scope.$$phase) {
 									$scope.$apply();
 									$scope.auth.$signOut();
@@ -142,6 +142,10 @@ var app = angular.module('avaliape.authController', [
 				$scope.auth.$languageCode = locale.getLocale();
 
 				$scope.auth.$sendPasswordResetEmail(emailAddress).then(function () {
+					$scope.$location.path("/auth/successForgotPswd")
+					if (!$scope.$$phase) {
+						$scope.$apply();
+					}
 					$scope.message = "E-mail sent";
 					console.log($scope.message);
 				}).catch(function (erro) {
@@ -202,9 +206,21 @@ app.config([
 
 		})
 
-		.when('/auth/success', 
+		.when('/auth/successCreateUser', 
 		{
 			templateUrl: 'app/components/auth/views/createSuccessView.html',
+			resolve: 
+			{
+				langs: function (locale) 
+				{
+					return locale.ready('auth');
+				}
+			}
+		})
+
+		.when('/auth/successForgotPswd', 
+		{
+			templateUrl: 'app/components/auth/views/forgotPassSuccessView.html',
 			resolve: 
 			{
 				langs: function (locale) 
