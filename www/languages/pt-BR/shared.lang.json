@@ -18,15 +18,12 @@
         "footer_help_frequentlyQuestions" : "Perguntas frequentes",
         "footer_help_forBusinesses": "Para Empresas",
 
-        "footer_find_findTitle":  "Encontrar",
-        "footer_find_byBuilding" : "por Edificio",
-        "footer_find_byCondo" : "por Condominio",
-        "footer_find_byAdress": "por Endereço",
-
+        "footer_language_languageTitle":  "Idioma",
         "footer_language_portuguese" : "Português",
         "footer_language_english": "Inglês",
         "footer_language_spanish": "Espanhol",
 
+        "menu_profile_profileTitle":  "Minha Conta",
         "menu_profile": "Perfil",
         "menu_loginData": "Dados de Login",
         "menu_personalData" : "Dados Pessoais",
