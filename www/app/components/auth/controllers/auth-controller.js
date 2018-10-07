@@ -64,10 +64,6 @@ var app = angular.module('avaliape.authController', [
 					$scope.auth.$createUserWithEmailAndPassword($scope.email, $scope.password)
 						.then(function (firebaseUser) {
 
-							$scope.messageTitle = "baajfjkafjlasdjfads";
-							$scope.message = "fkasdffdajifadsfdaslk";
-
-
 							firebaseUser.sendEmailVerification().then(function () {
 								$scope.$location.path("/auth/successCreateUser");
 								if (!$scope.$$phase) {
@@ -146,8 +142,7 @@ var app = angular.module('avaliape.authController', [
 					if (!$scope.$$phase) {
 						$scope.$apply();
 					}
-					$scope.message = "E-mail sent";
-					console.log($scope.message);
+				
 				}).catch(function (erro) {
 					$scope.error = $scope.errorMessage.getErrorMessagePswdReset(erro.code);
 				});

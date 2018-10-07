@@ -28,8 +28,6 @@ app.controller('UserDataController',
 												,GetGeoData
 											){
 
-
-
 			$scope.name = "userData";
 			$scope.auth = Auth;
 			$scope.$route = $route;
@@ -39,15 +37,6 @@ app.controller('UserDataController',
 			$scope.geoData = GetGeoData;
 
 			var currentUser  = $scope.auth.$getAuth();
-			
-			$scope.form = {
-				title: 'pfl.userDataForm.userDataFormTitle',
-				buttonText: 'pfl.userDataForm.saveUserData',
-				function: 'writeUserData()',
-				successMessage: ''
-			};
-
-			
 
 			$scope.countries;
 			$scope.states;
@@ -135,8 +124,8 @@ app.controller('UserDataController',
 							},
 					state : 
 							{
-								id:		$scope.userData.state.geonameId,
-								desc:	$scope.userData.state.name
+								id:		($scope.userData.state.geonameId != null ? $scope.userData.state.geonameId : "-1" ),
+								desc:	($scope.userData.state.name != null ? $scope.userData.state.name : "n/a")
 							},
 					city :  
 							{
@@ -150,24 +139,22 @@ app.controller('UserDataController',
 			ref.set(userFinal,
 				function (error) {
 					if (error) {
-						$scope.error = 	$scope.error = $scope.errorMessage.getErrorMessageAuth('auth.unknownError');
+						$scope.error = $scope.errorMessage.getErrorMessageAuth('auth.unknownError');
 					  } else{
 						currentUser.updateProfile({
 							displayName: userFinal.firstName+' '+userFinal.lastName,
 						  }).then(function() {
-							  console.log("cadastrado com sucesso");
 							  $scope.$location.path("/profile/successUserData");
 									$scope.$apply();
 						  }).catch(function(error) {
 							$scope.succesWriteUserData = false;
-							$scope.error = 	$scope.error = $scope.errorMessage.getErrorMessageAuth('auth.unknownError');
+							$scope.error = $scope.errorMessage.getErrorMessageAuth('auth.unknownError');
 						  });
 	
 					  }
 				}
 			);
 		};
-
 
 }]);
 

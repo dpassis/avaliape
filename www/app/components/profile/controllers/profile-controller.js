@@ -25,9 +25,7 @@ app.config(['$routeProvider', function($routeProvider) {
 
 	.when('/profile', {
 		templateUrl: 'app/components/profile/views/profileView.html',
-		controller: 'ProfileController',
 		resolve: {
-
 				 "currentAuth": ["Auth", function(Auth) {
 					return Auth.$requireSignIn();
 				 }],
@@ -80,7 +78,6 @@ app.config(['$routeProvider', function($routeProvider) {
 
 	.when('/profile/successUserData', {
 		templateUrl: 'app/components/profile/views/successUserDataView.html',
-		controller: 'ProfileController',
 		resolve: {
 			"currentAuth": ["Auth", function(Auth) {
 				return Auth.$requireSignIn();
@@ -98,19 +95,49 @@ app.config(['$routeProvider', function($routeProvider) {
 			"currentAuth": ["Auth", function(Auth) {
 				return Auth.$requireSignIn();
 			}],
+			"userValidate": ["UserData", function(UserData){
+				return UserData.validateUser();
+			}],
 			langs: function (locale) {
 				return locale.ready('pfl');
 			},
-
-
 			loadModule: ['$ocLazyLoad', '$q', function ($ocLazyLoad, $q) {
 											 
 				var deferred = $q.defer();
 												 
 			require(["loginDataController"], function () {
 															
-			$ocLazyLoad.inject('avaliape.loginDataController');
-			deferred.resolve();
+				$ocLazyLoad.inject('avaliape.loginDataController');
+				deferred.resolve();
+			});
+		
+			return deferred.promise;
+			}]
+		}
+	})
+
+
+	.when('/profile/personalData', {
+		templateUrl: 'app/components/profile/views/loginDataView.html',
+		controller: 'LoginDataController',
+		resolve: {
+			"currentAuth": ["Auth", function(Auth) {
+				return Auth.$requireSignIn();
+			}],
+			"userValidate": ["UserData", function(UserData){
+				return UserData.validateUser();
+			}],
+			langs: function (locale) {
+				return locale.ready('pfl');
+			},
+			loadModule: ['$ocLazyLoad', '$q', function ($ocLazyLoad, $q) {
+											 
+				var deferred = $q.defer();
+												 
+			require(["loginDataController"], function () {
+															
+				$ocLazyLoad.inject('avaliape.loginDataController');
+				deferred.resolve();
 			});
 		
 			return deferred.promise;

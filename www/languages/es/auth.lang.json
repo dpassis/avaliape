@@ -39,7 +39,7 @@
     "pswdResetForm_buttonText" : "Enviar",
 
     "pswdResetForm_errorMessage_invalidEmail": "Correo electrónico no válido!",
-    "pswdResetForm_errorMessage_userNotFound": "Usuario no encontradoo",
+    "pswdResetForm_errorMessage_userNotFound": "Usuario no encontrado",
     "pswdResetForm_errorMessage_unknownError": "Ops algo salió mal, inténtelo de nuevo.",
 
     "pswdResetForm_messageSuccess_title" : "¡Email enviado con éxito!",

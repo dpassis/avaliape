@@ -1,4 +1,4 @@
-<form name="userDataForm" style="margin-left: 400px;" novalidate>
+<form name="userDataForm" style="margin-left: 400px;" autocomplete="off" novalidate>
     <header>
         <h3 data-i18n="pfl.userDataForm_formTitle"></h3>
     </header>
@@ -6,10 +6,10 @@
         <tr>
             <td>
                 <input style="background: white" data-i18n-attr="{placeholder: 'pfl.userDataForm_firstName'}" ng-model="userData.firstName" id="firstName"
-                    type="text" required>
+                    type="text" autocomplete="nope" required>
             </td>
             <td>
-                <input style="background: white" data-i18n-attr="{placeholder: 'pfl.userDataForm_lastName'}" ng-model="userData.lastName" id="lastName"
+                <input style="background: white" data-i18n-attr="{placeholder: 'pfl.userDataForm_lastName'}" ng-model="userData.lastName" id="lastName" autocomplete="nope"
                     type="text">
             </td>
         </tr>
@@ -19,6 +19,7 @@
                     <option value="" data-i18n="pfl.userDataForm_gender"></option>
                     <option data-i18n-attr="{value: 'pfl.userDataForm_male'}" data-i18n="pfl.userDataForm_male"></option>
                     <option data-i18n-attr="{value: 'pfl.userDataForm_female'}" data-i18n="pfl.userDataForm_female"></option>
+                    <option data-i18n-attr="{value: 'pfl.userDataForm_other'}" data-i18n="pfl.userDataForm_other"></option>
                 </select>
             </td>
             <td>
