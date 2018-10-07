@@ -8,20 +8,24 @@
     "userDataForm_country": "Su País",
     "userDataForm_city": "Su ciudad",
     "userDataForm_state": "Su estado",
+    "userDataForm_state_na" : "No aplicable",
     "userDataForm_male": "Mujer",
     "userDataForm_female":"Hombre",
+    "userDataForm_other": "Otro",
     "userDataForm_loadingCountries" : "Cargando Países...",
     "userDataForm_loadingStates" : "Cargando Estados...",
     "userDataForm_loadingCities" : "Cargando Ciudades...",
     "userDataForm_successUserData": "Los datos registrados con éxito",
-    "userDataForm_messageSucces_title" : "Éxito!",
-    "userDataForm_messageSuccess_message": "¡Registro realizado con éxito!",
+    "userDataForm_messageSucces_title" : "¡Registro realizado con éxito!",
+    "userDataForm_messageSuccess_message": "Sus datos se salvaron con éxito.",
     "userDataForm_messageSuccess_clickToContinue": "Haga clic aquí para continuar...",
 
-    "loginDataForm_loginDataFormTitle": "Cambie sus datos de inicio de sesión",
+    "loginDataForm_formTitle": "Cambie sus datos de inicio de sesión",
+    "loginDataForm_formSubTitleEmail": "Cambia tu correo electrónico",
+    "loginDataForm_formSubTitlePswd": "Cambia tu contraseña",
     "loginDataForm_newEmail": "Su nuevo correo electrónico",
     "loginDataForm_oldPassword": "Su Contraseña",
     "loginDataForm_newPassword": "Nueva contraseña",
     "loginDataForm_confNewPassword": "Confirmar nueva contraseña",
-    "loginDataForm_changeEmailOrPassword": "Cambiar"
+    "loginDataForm_buttonText": "Cambiar"
 }

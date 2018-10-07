@@ -7,6 +7,7 @@ app.factory("ErrorMessage",function(){
              * @author dpassis
              * @description Function to retrieve a error message for Authentication user
              * @param errorCode
+             * @see https://firebase.google.com/docs/reference/js/?hl=pt-br
              * @returns a message error base in a passed errorCode
              */
             getErrorMessageAuth :  function(errorCode){
@@ -81,7 +82,54 @@ app.factory("ErrorMessage",function(){
                     default:
                         return 'auth.pswdResetForm_errorMessage_unknownError';
                 }
-        }
+            },
+
+            /**
+             * @author dpassis
+             * @description Function to retrieve a error message when Update User E-mail
+             * @param errorCode
+             * @returns a message error base in a passed errorCode
+             */
+            getErrorMessageUpdateEmail :  function(errorCode){
+        
+                switch(errorCode) {
+                    case 'auth/invalid-email':
+                        return  'auth.pswdResetForm_errorMessage_invalidEmail';
+                        break;
+                    case 'auth/email-already-in-use':
+                        return  'auth.pswdResetForm_errorMessage_userNotFound';
+                        break;
+                    case 'auth/requires-recent-login':
+                        return  'auth.pswdResetForm_errorMessage_userNotFound';
+                        break;
+                    default:
+                        return 'auth.pswdResetForm_errorMessage_unknownError';
+                }
+            },
+
+
+             /**
+             * @author dpassis
+             * @description Function to retrieve a error message when Update User Password
+             * @param errorCode
+             * @returns a message error base in a passed errorCode
+             */
+            getErrorMessageUpdatePswd :  function(errorCode){
+        
+                switch(errorCode) {
+                    case 'auth/weak-password':
+                        return  'auth.pswdResetForm_errorMessage_invalidEmail';
+                        break;
+                    case 'auth/diff-password':
+                        return  'auth.pswdResetForm_errorMessage_userNotFound';
+                        break;
+                    case 'auth/requires-recent-login':
+                        return  'auth.pswdResetForm_errorMessage_userNotFound';
+                        break;
+                    default:
+                        return 'auth.pswdResetForm_errorMessage_unknownError';
+                }
+            }
         }
 
     });

@@ -8,20 +8,24 @@
       "userDataForm_country": "Seu País",
       "userDataForm_city": "Sua cidade",
       "userDataForm_state": "Seu estado",
+      "userDataForm_state_na" : "Não Aplicável",
       "userDataForm_male": "Masculino",
       "userDataForm_female":"Feminino",
+      "userDataForm_other": "Outros",
       "userDataForm_loadingCountries" : "Carregando Países...",
       "userDataForm_loadingStates" : "Carregando Estados...",
       "userDataForm_loadingCities" : "Carregando Cidades...",
       "userDataForm_successUserData": "Dados cadastrados com sucesso",
-      "userDataForm_messageSucces_title" : "Sucesso!",
-      "userDataForm_messageSuccess_message": "Cadastro realizado com Sucesso!",
+      "userDataForm_messageSucces_title" : "Cadastro realizado com Sucesso!",
+      "userDataForm_messageSuccess_message": "Seus dados foram salvos com sucesso.",
       "userDataForm_messageSuccess_clickToContinue": "Clique aqui para continuar...",
 
-      "loginDataForm_loginDataFormTitle": "Altere seus dados de Login",
+      "loginDataForm_formTitle": "Altere seus dados de Login",
+      "loginDataForm_formSubTitleEmail": "Altere seu e-mail",
+      "loginDataForm_formSubTitlePswd": "Altere sua senha",
       "loginDataForm_newEmail": "Seu novo email",
       "loginDataForm_oldPassword": "Sua Senha",
       "loginDataForm_newPassword": "Nova Senha",
       "loginDataForm_confNewPassword": "Confirmar Nova Senha",
-      "loginDataForm_changeEmailOrPassword": "Alterar"
+      "loginDataForm_buttonText": "Alterar"
 }

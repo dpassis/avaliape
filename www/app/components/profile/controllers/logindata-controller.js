@@ -37,21 +37,12 @@ app.controller('LoginDataController',
 
 			var currentUser  = $scope.auth.$getAuth();
 			
-			$scope.form = {
-				title: 'pfl.loginDataForm.loginDataFormTitle',
-				buttonText: 'pfl.loginDataForm.changeEmailOrPassword',
-				function: 'writeUserData()',
-				successMessage: ''
-			};
-
 			$scope.loginData = {
 				email: currentUser.email,
 				newEmail: '',
 				newPaswword: ''
 
 			}
-
-			
 
 
 		/**
@@ -61,37 +52,49 @@ app.controller('LoginDataController',
 		 * in Firebase Authentication
 		 * 
 		 */
-		$scope.writeLoginData = function () {
+		$scope.updateUserEmail = function () {
 
 			$scope.succesWriteUserData = false;
 
-			var userFinal = {
+			$scope.auth.$signInWithEmailAndPassword($scope.loginData.email,$scope.loginData.oldPassword)
+			.then(function (user) {
+				user.updateEmail($scope.loginData.newEmail).then(function() {
+					user.sendEmailVerification().then(function() {
+						// Success
+					  }).catch(function(error) {
+						$scope.error = $scope.errorMessage.getErrorMessageAuth(erro.code);
+					  });
+				  }).catch(function(error) {
+					$scope.error = $scope.errorMessage.getErrorMessageAuth(erro.code);
+				  });
 
-					email: 		currentUser.email,
-				
-			};
+			}).catch(function (erro) {
+				$scope.error = $scope.errorMessage.getErrorMessageAuth(erro.code);
+			});
+		
+		};
 
-			var ref = firebase.database().ref('users/' + currentUser.uid);
-	
-			ref.set(userFinal,
-				function (error) {
-					if (error) {
-						$scope.error = 	$scope.error = $scope.errorMessage.getErrorMessageAuth('auth.unknownError');
-					  } else{
-						currentUser.updateProfile({
-							displayName: userFinal.firstName+' '+userFinal.lastName,
-						  }).then(function() {
-							  console.log("cadastrado com sucesso");
-							  $scope.$location.path("/profile/successUserData");
-									$scope.$apply();
-						  }).catch(function(error) {
-							$scope.succesWriteUserData = false;
-							$scope.error = 	$scope.error = $scope.errorMessage.getErrorMessageAuth('auth.unknownError');
-						  });
-	
-					  }
-				}
-			);
+		$scope.updateUserPswd = function(){
+			$scope.succesWriteUserData = false;
+
+
+			if ($scope.loginData.newPassword == $scope.loginData.confNewPassword) {
+
+				$scope.auth.$signInWithEmailAndPassword(currentUser.email,$scope.loginData.oldPassword)
+				.then(function (user) {
+					user.updatePassword($scope.loginData.newPassword).then(function() {
+						
+					}).catch(function(error) {
+						$scope.error = $scope.errorMessage.getErrorMessageAuth(erro.code);
+					});
+
+				}).catch(function (erro) {
+					$scope.error = $scope.errorMessage.getErrorMessageAuth(erro.code);
+				});
+		 }else{
+			$scope.error = $scope.errorMessage.getErrorMessageAuthCreate('auth/diff-password');
+		 }
+
 		};
 
 
